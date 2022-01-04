@@ -1,0 +1,29 @@
+plugins {
+  id 'groovy'
+}
+
+group 'dev.schulte'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+  mavenCentral()
+}
+
+ext {
+  seleniumVersion = '4.1.1'
+  showBrowser = false
+}
+
+dependencies {
+  testImplementation 'org.codehaus.groovy:groovy-all:3.0.9'
+  testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
+  testImplementation 'org.gebish:geb-spock:5.1'
+  testImplementation 'io.github.bonigarcia:webdrivermanager:5.0.2'
+  testImplementation "org.seleniumhq.selenium:selenium-firefox-driver:${seleniumVersion}"
+  testRuntimeOnly "org.seleniumhq.selenium:selenium-support:${seleniumVersion}"
+}
+
+test {
+  systemProperty 'showBrowser', System.properties['showBrowser'] ?: "${showBrowser}"
+  useJUnitPlatform()
+}
