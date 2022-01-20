@@ -12,6 +12,7 @@ class DuckDuckGoTest extends GebSpec {
     search 'Geb Spock'
 
     then:
-    assert result(0).text().contains('Geb')
+    at DuckDuckGoResultsPage
+    assert firstResultText.contains('Geb')
   }
 }

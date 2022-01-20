@@ -10,6 +10,7 @@ class DuckDuckGoResultsPage extends Page {
 
   static content = {
     results { $("#links") }
-    result { index -> results[index] }
+    resultText { index -> results[index].text() }
+    firstResultText { resultText(0) }
   }
 }

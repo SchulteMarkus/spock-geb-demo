@@ -6,7 +6,6 @@ class DuckDuckGoStartPage extends Page {
 
   static at = {
     title.startsWith('DuckDuckGo')
-
     !$('#logo_homepage_link').isEmpty()
   }
 
