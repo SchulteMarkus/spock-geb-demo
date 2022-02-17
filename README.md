@@ -1,3 +1,5 @@
+[![.github/workflows/run-e2etests.yml](https://github.com/SchulteMarkus/spock-geb-demo/actions/workflows/run-e2etests.yml/badge.svg)](https://github.com/SchulteMarkus/spock-geb-demo/actions/workflows/run-e2etests.yml)
+
 # Spock Geb demo
 
 This tiny demo demonstrates how to use [Geb](https://www.gebish.org) in combination with
