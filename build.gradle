@@ -10,7 +10,7 @@ repositories {
 }
 
 ext {
-  seleniumVersion = '4.2.1'
+  seleniumVersion = '4.2.2'
   showBrowser = false
 }
 
