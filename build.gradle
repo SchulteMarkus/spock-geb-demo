@@ -2,6 +2,9 @@ plugins {
   id 'groovy'
 }
 
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
 group 'dev.schulte'
 version '0.0.1-SNAPSHOT'
 
@@ -16,7 +19,7 @@ ext {
 dependencies {
   testImplementation 'org.gebish:geb-spock:6.0'
   testImplementation 'io.github.bonigarcia:webdrivermanager:5.3.0'
-  testImplementation "org.seleniumhq.selenium:selenium-firefox-driver:4.5.0"
+  testImplementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.5.0'
 }
 
 test {
