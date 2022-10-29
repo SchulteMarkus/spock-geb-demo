@@ -1,4 +1,5 @@
 [![.github/workflows/run-e2etests.yml](https://github.com/SchulteMarkus/spock-geb-demo/actions/workflows/run-e2etests.yml/badge.svg)](https://github.com/SchulteMarkus/spock-geb-demo/actions/workflows/run-e2etests.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SchulteMarkus_spock-geb-demo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SchulteMarkus_spock-geb-demo)
 
 # Spock Geb demo
 
