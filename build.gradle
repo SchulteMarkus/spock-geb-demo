@@ -1,5 +1,6 @@
 plugins {
   id 'groovy'
+  id 'org.sonarqube' version '3.4.0.2513'
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
@@ -25,4 +26,12 @@ dependencies {
 test {
   systemProperty 'showBrowser', System.properties['showBrowser'] ?: "${showBrowser}"
   useJUnitPlatform()
+}
+
+sonarqube {
+  properties {
+    property 'sonar.projectKey', 'SchulteMarkus_spock-geb-demo'
+    property 'sonar.organization', 'schulte'
+    property 'sonar.host.url', 'https://sonarcloud.io'
+  }
 }
