@@ -30,3 +30,7 @@ The demo is minimized, so you won't have problems understanding what happens.
     which are used as part of the test
 - [GebConfig.groovy](src/test/resources/GebConfig.groovy) sets up the selenium driver
   ([WebDriverManager](https://github.com/bonigarcia/webdrivermanager) is being used here)
+
+# Further reading
+
+See https://github.com/geb/geb-example-gradle for a similar example, but created/maintained by the original Geb author(s).
