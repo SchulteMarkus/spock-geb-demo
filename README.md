@@ -1,6 +1,7 @@
 [![.github/workflows/run-e2etests.yml](https://github.com/SchulteMarkus/spock-geb-demo/actions/workflows/run-e2etests.yml/badge.svg)](https://github.com/SchulteMarkus/spock-geb-demo/actions/workflows/run-e2etests.yml)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=SchulteMarkus_spock-geb-demo&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=SchulteMarkus_spock-geb-demo)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SchulteMarkus_spock-geb-demo&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SchulteMarkus_spock-geb-demo)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSchulteMarkus%2Fspock-geb-demo&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 # Spock Geb demo
 
