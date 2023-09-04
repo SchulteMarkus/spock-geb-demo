@@ -7,7 +7,7 @@
 This tiny demo demonstrates how to use [Geb](https://www.gebish.org) in combination with
 [Spock](https://spockframework.org) for e2e testing.
 
-    ### A Firefox will be launched for testing duckduckgo.com
+    ### A Firefox will be launched for testing https://en.wikipedia.org/
     $ ./gradlew test -DshowBrowser=true
 
 The demo is minimized, so you won't have problems understanding what happens.
@@ -22,15 +22,17 @@ The demo is minimized, so you won't have problems understanding what happens.
 
 ## e2e testing done
 
-- Testing duckduckgo.com is done
-  in [DuckDuckGoTest](src/test/groovy/dev/schulte/spockgebdemo/DuckDuckGoTest.groovy)
+- Testing https://en.wikipedia.org/ is done in
+  [WikipediaTest](src/test/groovy/dev/schulte/spockgebdemo/wikipedia/WikipediaTest.groovy)
   - There are two Geb pages
-    [DuckDuckGoStartPage](src/test/groovy/dev/schulte/spockgebdemo/DuckDuckGoStartPage.groovy) and
-    [DuckDuckGoResultsPage](src/test/groovy/dev/schulte/spockgebdemo/DuckDuckGoResultsPage.groovy)
+    1. [WikipediaPage](src/test/groovy/dev/schulte/spockgebdemo/wikipedia/WikipediaPage.groovy) and
+    2. [WikipediaResultsPage](src/test/groovy/dev/schulte/spockgebdemo/wikipedia/WikipediaResultsPage.groovy)
+    
     which are used as part of the test
 - [GebConfig.groovy](src/test/resources/GebConfig.groovy) sets up the selenium driver
   ([WebDriverManager](https://github.com/bonigarcia/webdrivermanager) is being used here)
 
 # Further reading
 
-See https://github.com/geb/geb-example-gradle for a similar example, but created/maintained by the original Geb author(s).
+See https://github.com/geb/geb-example-gradle for a similar example, but created/maintained by the
+original Geb author(s).
