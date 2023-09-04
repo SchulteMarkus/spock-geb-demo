@@ -1,4 +1,4 @@
-package dev.schulte.spockgebdemo
+package dev.schulte.spockgebdemo.duckduckgo
 
 import geb.Page
 

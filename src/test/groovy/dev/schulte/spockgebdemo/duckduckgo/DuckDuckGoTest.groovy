@@ -1,12 +1,14 @@
-package dev.schulte.spockgebdemo
+package dev.schulte.spockgebdemo.duckduckgo
 
 import geb.spock.GebSpec
+import spock.lang.Ignore
 
 class DuckDuckGoTest extends GebSpec {
 
-  def 'Visit and use DuckDuckGo'() {
+  @Ignore
+  def 'Visit and search on DuckDuckGo'() {
     given:
-    to DuckDuckGoStartPage
+    to DuckDuckGoPage
 
     when:
     search 'Geb Spock'

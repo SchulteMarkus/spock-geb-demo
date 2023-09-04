@@ -8,5 +8,3 @@ driver = {
   def headless = !Boolean.valueOf(System.getProperty('showBrowser'))
   new FirefoxDriver(new FirefoxOptions().setHeadless(headless))
 }
-
-baseUrl = 'https://duckduckgo.com'

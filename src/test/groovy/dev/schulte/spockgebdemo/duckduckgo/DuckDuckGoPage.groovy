@@ -1,8 +1,10 @@
-package dev.schulte.spockgebdemo
+package dev.schulte.spockgebdemo.duckduckgo
 
 import geb.Page
 
-class DuckDuckGoStartPage extends Page {
+class DuckDuckGoPage extends Page {
+
+  static url = 'https://duckduckgo.com/'
 
   static at = {
     title.startsWith('DuckDuckGo')
