@@ -6,5 +6,10 @@ driver = {
   WebDriverManager.firefoxdriver().setup()
 
   def headless = !Boolean.valueOf(System.getProperty('showBrowser'))
-  new FirefoxDriver(new FirefoxOptions().setHeadless(headless))
+
+  def firefoxOptions = new FirefoxOptions()
+  if (headless) {
+    firefoxOptions.addArguments("-headless")
+  }
+  new FirefoxDriver(firefoxOptions)
 }
