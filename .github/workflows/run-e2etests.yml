@@ -26,7 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew -Dorg.gradle.welcome=never build sonar --no-daemon
+        run: ./gradlew -Dorg.gradle.welcome=never build sonar --no-daemon --info
       - name: Test Summary
         uses: test-summary/action@v2
         with:
