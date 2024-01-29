@@ -12,9 +12,9 @@ class WikipediaPage extends Page {
 
   static content = {
     searchField { $("#searchInput") }
-    searchButton(to: WikipediaResultsPage) { $("#searchform button") }
+    searchButton(to: WikipediaResultsPage) { $("#searchform > button") }
   }
-  
+
   void search(String searchTerm) {
     searchField.value searchTerm
     searchButton.click()
